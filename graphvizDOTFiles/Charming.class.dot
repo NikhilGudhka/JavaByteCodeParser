@@ -1,0 +1,23 @@
+graph G
+{
+	overlap=scalexy;
+	labelloc="t";
+	label="public super class Charming \n LCOM4 = 4";
+
+	node[shape=ellipse,color=blue]
+		1[label="name"]
+		2[label="mother"]
+		3[label="curse"];
+
+	node[shape=rectangle,color=black]
+		4[label="twin()"]
+		5[label="twin(Charming)"]
+		6[label="getName()"]
+		7[label="getMother()"]
+		8[label="saviour(Swan)"];
+
+	4 -- 2;
+	6 -- 1;
+	7 -- 2;
+	8 -- 3;
+}

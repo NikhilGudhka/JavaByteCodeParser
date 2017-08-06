@@ -1,0 +1,16 @@
+graph G
+{
+	overlap=scalexy;
+	labelloc="t";
+	label="public final super class Swan \n LCOM4 = 3";
+
+	node[shape=ellipse,color=blue]
+		1[label="AGE"]
+		2[label="HENRY"]
+		3[label="jail"];
+
+	node[shape=rectangle,color=black]
+		4[label="believe()"];
+
+	4 -- 3;
+}

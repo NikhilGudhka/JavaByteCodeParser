@@ -1,0 +1,25 @@
+graph G
+{
+	overlap=scalexy;
+	labelloc="t";
+	label="public super class Snow \n LCOM4 = 2";
+
+	node[shape=ellipse,color=blue]
+		1[label="prince"]
+		2[label="emma"]
+		3[label="sleep"]
+		4[label="curse"];
+
+	node[shape=rectangle,color=black]
+		5[label="thief(Charming, Author)"]
+		6[label="kiss(Charming)"]
+		7[label="apple(Evil)"]
+		8[label="evilCurse(Evil)"];
+
+	5 -- 1;
+	6 -- 4;
+	7 -- 4;
+	7 -- 3;
+	8 -- 2;
+	8 -- 4;
+}

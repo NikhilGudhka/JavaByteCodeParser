@@ -1,0 +1,21 @@
+graph G
+{
+	overlap=scalexy;
+	labelloc="t";
+	label="public super class Author \n LCOM4 = 1";
+
+	node[shape=ellipse,color=blue]
+		1[label="story"]
+		2[label="pen"];
+
+	node[shape=rectangle,color=black]
+		3[label="selfish()"]
+		4[label="newAuthor(java/lang/String)"]
+		5[label="evil()"];
+
+	3 -- 2;
+	3 -- 1;
+	4 -- 1;
+	4 -- 2;
+	5 -- 1;
+}

@@ -1,0 +1,116 @@
+graph G
+{
+	overlap=scalexy;
+	labelloc="t";
+	label="public super class com/oracle/javafx/jmx/SGMXBeanImpl \n LCOM4 = 5";
+
+	node[shape=ellipse,color=blue]
+		1[label="SGMX_NOT_PAUSED_TEXT"]
+		2[label="SGMX_CALL_GETSGTREE_FIRST"]
+		3[label="paused"]
+		4[label="windowMap"]
+		5[label="jwindows"]
+		6[label="nodeMap"]
+		7[label="jsceneGraphs"]
+		8[label="scene2Image"]
+		9[label="playersToResume"];
+
+	node[shape=rectangle,color=black]
+		10[label="pause()"]
+		11[label="resume()"]
+		12[label="step()"]
+		13[label="getWindows()"]
+		14[label="getSGTree(int)"]
+		15[label="addHighlightedNode(int)"]
+		16[label="removeHighlightedNode(int)"]
+		17[label="addHighlightedRegion(int, double, double, double, double)"]
+		18[label="removeHighlightedRegion(int, double, double, double, double)"]
+		19[label="getNode(int)"]
+		20[label="getScene(int)"]
+		21[label="createHighlightRegion(int)"]
+		22[label="makeScreenShot(int)"]
+		23[label="makeScreenShot(int, double, double, double, double)"]
+		24[label="getScreenShotPath(javafx/scene/Scene, double, double, double, double)"]
+		25[label="releaseAllStateObject()"]
+		26[label="clearWindowMap()"]
+		27[label="clearNodeMap()"]
+		28[label="clearScene2Image()"]
+		29[label="importWindowsIfNeeded()"]
+		30[label="importWindows()"]
+		31[label="importSGTree(javafx/scene/Node, int)"]
+		32[label="getCSSInfo(int)"]
+		33[label="processCssMetaData(javafx/css/CssMetaData, javafx/scene/Node, com/oracle/javafx/jmx/json/JSONDocument)"]
+		34[label="upcaseFirstLetter(java/lang/String)"]
+		35[label="getBounds(int)"]
+		36[label="processLeafNode(javafx/scene/Node, com/sun/javafx/jmx/MXNodeAlgorithmContext)"]
+		37[label="processContainerNode(javafx/scene/Parent, com/sun/javafx/jmx/MXNodeAlgorithmContext)"]
+		38[label="createJSONDocument(javafx/scene/Node, com/sun/javafx/jmx/MXNodeAlgorithmContext)"]
+		39[label="pauseMedia()"]
+		40[label="resumeMedia()"];
+
+	10 -- 3;
+	10 -- 25;
+	10 -- 39;
+	11 -- 3;
+	11 -- 25;
+	11 -- 40;
+	12 -- 3;
+	12 -- 25;
+	13 -- 3;
+	13 -- 5;
+	13 -- 29;
+	14 -- 3;
+	14 -- 6;
+	14 -- 7;
+	14 -- 4;
+	14 -- 29;
+	14 -- 31;
+	15 -- 3;
+	15 -- 21;
+	15 -- 19;
+	16 -- 3;
+	16 -- 21;
+	16 -- 19;
+	17 -- 3;
+	17 -- 20;
+	18 -- 3;
+	18 -- 20;
+	19 -- 6;
+	20 -- 4;
+	21 -- 19;
+	22 -- 3;
+	22 -- 6;
+	22 -- 24;
+	23 -- 3;
+	23 -- 6;
+	23 -- 20;
+	23 -- 24;
+	24 -- 8;
+	25 -- 5;
+	25 -- 7;
+	25 -- 26;
+	25 -- 27;
+	25 -- 28;
+	26 -- 4;
+	27 -- 6;
+	28 -- 8;
+	29 -- 4;
+	29 -- 30;
+	30 -- 5;
+	30 -- 4;
+	30 -- 7;
+	31 -- 7;
+	31 -- 6;
+	32 -- 3;
+	32 -- 6;
+	32 -- 33;
+	33 -- 33;
+	35 -- 3;
+	35 -- 6;
+	36 -- 38;
+	37 -- 38;
+	38 -- 6;
+	38 -- 38;
+	39 -- 9;
+	40 -- 9;
+}

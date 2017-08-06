@@ -1,0 +1,23 @@
+graph G
+{
+	overlap=scalexy;
+	labelloc="t";
+	label="public super class Evil \n LCOM4 = 2";
+
+	node[shape=ellipse,color=blue]
+		1[label="emma"]
+		2[label="mary"]
+		3[label="queen"]
+		4[label="mayor"];
+
+	node[shape=rectangle,color=black]
+		5[label="family()"]
+		6[label="curse(Author)"];
+
+	5 -- 3;
+	5 -- 4;
+	6 -- 3;
+	6 -- 2;
+	6 -- 4;
+	6 -- 5;
+}

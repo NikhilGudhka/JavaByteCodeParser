@@ -1,0 +1,22 @@
+graph G
+{
+	overlap=scalexy;
+	labelloc="t";
+	label="CBO = 7.0/6 = 1.1666666666666667"
+
+	node[shape=rectangle]
+	1 [label="com/oracle/javafx/jmx/SGMXBeanImpl"]
+	2 [label="Author"]
+	3 [label="Snow"]
+	4 [label="Evil"]
+	5 [label="Swan"]
+	6 [label="Charming"];
+
+	3 -- 2;
+	3 -- 6;
+	3 -- 4;
+	3 -- 5;
+	4 -- 5;
+	4 -- 2;
+	6 -- 5;
+}
